@@ -11,13 +11,13 @@ export default function Home() {
 
   return (
     <div className="space-y-20">
-      <section className="relative text-center flex items-center justify-center rounded-lg overflow-hidden">
+      <section className="relative text-center h-[50vh] flex items-center justify-center rounded-lg overflow-hidden">
          <Image 
-            src="https://placehold.co/1200x600.png"
+            src="https://placehold.co/1200x500.png"
             alt="Hero banner showing modern office with computers"
-            width={1200}
-            height={600}
-            className="object-cover w-full h-auto"
+            layout="fill"
+            objectFit="cover"
+            className="z-0"
             data-ai-hint="modern office computers"
           />
          <div className="absolute inset-0 bg-black/50" />
