@@ -64,7 +64,7 @@ export function SignUpForm() {
       <CardHeader>
         <CardTitle className="font-headline text-3xl">Create an Account</CardTitle>
         <CardDescription>
-          Join Tech Solutions Hub to get started with our products and services.
+          Join Prolab IT Solutions to get started with our products and services.
         </CardDescription>
       </CardHeader>
       <CardContent>

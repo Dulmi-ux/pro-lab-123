@@ -20,7 +20,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Youtube } from "lucide-react";
 import {
   Sheet,
   SheetContent,
@@ -31,7 +31,7 @@ const navLinks = [
   { href: "/laptops", label: "Laptops" },
   { href: "/desktops", label: "Desktops" },
   { href: "/accessories", label: "Accessories" },
-  { href: "/support", label: "Support" },
+  { href: "/about", label: "About Us"},
   { href: "/contact", label: "Contact" },
 ];
 
@@ -66,7 +66,7 @@ export function SiteHeader() {
         <Link href="/" className="mr-6 flex items-center space-x-2">
           <Logo className="h-6 w-6 text-primary" />
           <span className="hidden font-bold sm:inline-block font-headline">
-            Tech Solutions Hub
+            Prolab IT Solutions
           </span>
         </Link>
         <nav className="hidden md:flex flex-1 items-center gap-6 text-sm">
@@ -83,7 +83,13 @@ export function SiteHeader() {
             </Link>
           ))}
         </nav>
-        <div className="flex flex-1 items-center justify-end space-x-4">
+        <div className="flex flex-1 items-center justify-end space-x-2">
+          <Button asChild variant="outline" size="sm" className="hidden sm:flex">
+             <a href="https://youtube.com/playlist?list=PLT98CRl2KxKHaKA9-4_I38sLzK134p4GJ&si=VQGZSuLOnSuW6uHO" target="_blank" rel="noopener noreferrer">
+                <Youtube className="mr-2 h-4 w-4"/> 
+                Watch Tutorials
+             </a>
+          </Button>
           <ThemeToggle />
           {loading ? (
              <div className="h-8 w-20 bg-muted rounded-md animate-pulse" />
@@ -134,7 +140,7 @@ export function SiteHeader() {
                 <div className="flex justify-between items-center border-b pb-4">
                    <Link href="/" className="flex items-center space-x-2" onClick={() => setMobileMenuOpen(false)}>
                       <Logo className="h-6 w-6 text-primary" />
-                      <span className="font-bold font-headline">Tech Solutions Hub</span>
+                      <span className="font-bold font-headline">Prolab IT Solutions</span>
                    </Link>
                    <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(false)}>
                       <X/>
@@ -156,6 +162,12 @@ export function SiteHeader() {
                   ))}
                 </nav>
                 <div className="mt-auto border-t pt-4 flex flex-col gap-2">
+                  <Button asChild variant="outline" size="sm" className="w-full">
+                    <a href="https://youtube.com/playlist?list=PLT98CRl2KxKHaKA9-4_I38sLzK134p4GJ&si=VQGZSuLOnSuW6uHO" target="_blank" rel="noopener noreferrer">
+                        <Youtube className="mr-2 h-4 w-4"/> 
+                        Watch Tutorials
+                    </a>
+                  </Button>
                    {user ? null : (
                     <>
                       <Button asChild variant="outline" onClick={() => setMobileMenuOpen(false)}><Link href="/login">Login</Link></Button>

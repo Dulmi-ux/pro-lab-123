@@ -10,13 +10,13 @@ export function SiteFooter() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center space-x-2 mb-4 md:mb-0">
             <Logo className="h-6 w-6 text-primary" />
-            <span className="font-bold font-headline">Tech Solutions Hub</span>
+            <span className="font-bold font-headline">Prolab IT Solutions</span>
           </div>
           <nav className="flex flex-wrap justify-center gap-4 md:gap-6 text-sm text-muted-foreground mb-4 md:mb-0">
             <Link href="/laptops" className="hover:text-foreground">Laptops</Link>
             <Link href="/desktops" className="hover:text-foreground">Desktops</Link>
             <Link href="/accessories" className="hover:text-foreground">Accessories</Link>
-            <Link href="/support" className="hover:text-foreground">Support</Link>
+            <Link href="/about" className="hover:text-foreground">About</Link>
             <Link href="/contact" className="hover:text-foreground">Contact</Link>
           </nav>
           <div className="flex items-center space-x-2">
@@ -38,7 +38,7 @@ export function SiteFooter() {
           </div>
         </div>
         <div className="mt-8 pt-4 border-t text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Tech Solutions Hub. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Prolab IT Solutions. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -20,7 +20,7 @@ export default function Chatbot() {
   const [messages, setMessages] = useState<Message[]>([
     {
       sender: 'bot',
-      text: "Hello! I'm the Tech Solutions Hub assistant. How can I help you with our products or services today?",
+      text: "Hello! I'm the Prolab IT Solutions assistant. How can I help you with our products or services today?",
     },
   ]);
   const [input, setInput] = useState("");
@@ -75,7 +75,7 @@ export default function Chatbot() {
         <SheetHeader className="p-4 border-b">
           <SheetTitle className="font-headline flex items-center gap-2">
             <Bot className="text-primary" />
-            Support Chat
+            Quick Help
           </SheetTitle>
         </SheetHeader>
         <ScrollArea className="flex-grow p-4" ref={scrollAreaRef}>
@@ -98,7 +98,7 @@ export default function Chatbot() {
                     "max-w-[75%] rounded-lg px-4 py-2",
                     msg.sender === "user"
                       ? "bg-primary text-primary-foreground"
-                      : "bg-muted text-muted-foreground"
+                      : "bg-muted"
                   )}
                 >
                   <p className="text-sm">{msg.text}</p>

@@ -7,8 +7,8 @@ import { Toaster } from '@/components/ui/toaster';
 import Chatbot from '@/components/chatbot';
 
 export const metadata: Metadata = {
-  title: 'Tech Solutions Hub',
-  description: 'Your one-stop shop for high-performance tech and support.',
+  title: 'Prolab IT Solutions',
+  description: 'Your trusted partner for IT hardware and expert support.',
 };
 
 export default function RootLayout({

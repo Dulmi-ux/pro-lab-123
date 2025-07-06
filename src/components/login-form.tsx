@@ -60,7 +60,7 @@ export function LoginForm() {
       <CardHeader>
         <CardTitle className="font-headline text-3xl">Login</CardTitle>
         <CardDescription>
-          Welcome back! Please enter your credentials to access your account.
+          Welcome back to Prolab IT Solutions! Please enter your credentials.
         </CardDescription>
       </CardHeader>
       <CardContent>
