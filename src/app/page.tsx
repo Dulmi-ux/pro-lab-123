@@ -13,12 +13,12 @@ export default function Home() {
     <div className="space-y-20">
       <section className="relative text-center h-[50vh] flex items-center justify-center rounded-lg overflow-hidden">
          <Image 
-            src="https://placehold.co/1200x500.png"
-            alt="Hero banner showing modern office with computers"
+            src="/__s__/image/image_0.jpeg"
+            alt="Hero banner showing a world map with connecting lines, representing global IT solutions."
             layout="fill"
             objectFit="cover"
             className="z-0"
-            data-ai-hint="modern office computers"
+            data-ai-hint="global network"
           />
          <div className="absolute inset-0 bg-black/50" />
          <div className="relative z-10 text-white p-4">
