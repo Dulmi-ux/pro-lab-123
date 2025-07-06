@@ -11,32 +11,23 @@ export default function Home() {
 
   return (
     <div className="space-y-20">
-      <section className="relative text-center h-[50vh] flex items-center justify-center rounded-lg overflow-hidden">
-         <Image 
-            src="/__s__/image/image_0.jpeg"
-            alt="Hero banner showing a world map with connecting lines, representing global IT solutions."
-            layout="fill"
-            objectFit="cover"
-            className="z-0"
-            data-ai-hint="global network"
-          />
-         <div className="absolute inset-0 bg-black/50" />
-         <div className="relative z-10 text-white p-4">
-            <h1 className="text-4xl md:text-6xl font-bold font-headline">
-              Welcome to Prolab IT Solutions
-            </h1>
-            <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto">
-              Your trusted partner for cutting-edge IT hardware, accessories, and expert technical support. We power your progress.
-            </p>
-            <div className="mt-8 flex justify-center gap-4">
-              <Button asChild size="lg">
-                <Link href="/desktops">Explore Products</Link>
-              </Button>
-              <Button asChild size="lg" variant="secondary">
-                <Link href="/support">Get Support</Link>
-              </Button>
-            </div>
-         </div>
+      <section className="text-center bg-card p-12 rounded-lg shadow-md">
+        <div className="relative z-10 p-4">
+          <h1 className="text-4xl md:text-6xl font-bold font-headline text-primary">
+            Welcome to Prolab IT Solutions
+          </h1>
+          <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
+            Your trusted partner for cutting-edge IT hardware, accessories, and expert technical support. We power your progress.
+          </p>
+          <div className="mt-8 flex justify-center gap-4">
+            <Button asChild size="lg">
+              <Link href="/desktops">Explore Products</Link>
+            </Button>
+            <Button asChild size="lg" variant="secondary">
+              <Link href="/support">Get Support</Link>
+            </Button>
+          </div>
+        </div>
       </section>
 
       <section>
